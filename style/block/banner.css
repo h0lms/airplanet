@@ -1,0 +1,8 @@
+.banner {
+  min-height: 308px;
+  position: relative;
+}
+
+.banner__img {
+  position: absolute;
+}

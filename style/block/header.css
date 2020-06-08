@@ -1,0 +1,14 @@
+.header {
+  background-color: #5973b1;
+  color: #ffffff;
+  min-height: 73px;
+  margin-bottom: 13px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: inherit;
+  padding: 0 21px;
+}

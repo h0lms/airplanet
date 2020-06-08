@@ -1,0 +1,119 @@
+.tariffs__title {
+  font-size: 49px;
+  line-height: 1.1;
+  margin-bottom: 27px;
+  font-weight: bold;
+}
+
+.tariffs__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tariffs__item {
+  border: 1px solid transparent;
+  width: 250px;
+}
+
+.tariffs__item:hover {
+  border: 1px solid #e8e8ec;
+  border-radius: 5px; 
+}
+
+.tariff {
+  text-align: center;
+  position: relative;
+  padding: 41px 25px 25px;
+  margin-right: 20px;
+}
+
+.tariff:last-child {
+  margin-right: 0;
+}
+
+.tariff::before {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #5972b1;
+  margin-bottom: 25px;
+}
+
+.tariff::after {
+  content: "";
+  display: inline-block;
+  background-image: url('../../img/icons/sprites.png');
+  position: absolute;
+}
+
+.tariff--standart.tariff::after{
+  width: 27px;
+  height: 31px;
+  background-position: -62px -10px;
+  top: 62px;
+  left: 110px;
+}
+
+.tariff--premium.tariff::after{
+  width: 32px;
+  height: 32px;
+  background-position: -10px -10px;
+  top: 60px;
+  left: 108px;
+}
+
+.tariff--lux.tariff::after{
+  width: 28px;
+  height: 29px;
+  background-position: -109px -10px;
+  top: 62px;
+  left: 110px;
+}
+
+.tariff__title {
+  font-size: 11px;
+  letter-spacing: 2.64px;
+  font-weight: bold;
+  color: #262626;
+  text-transform: uppercase;
+}
+
+.tariff__description {
+  font-weight: lighter;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.tariff__description ul {
+  margin-left: 20px;
+}
+
+.tariff__description li {
+  text-align-last: left;
+  margin-left: 8px;
+  position: relative;
+}
+
+.tariff__description li:before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -28px;
+  background-color: #000000;
+}
+
+.tariff__price {
+  color: #252525;
+  font-size: 54px;
+}
+
+.tariff__currency {
+  font-size: 0.5em;
+  margin-right: 5px;
+}

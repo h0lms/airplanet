@@ -1,0 +1,71 @@
+.menu__link {
+  position: relative;
+  color: #5972b1;
+  font-size: 12px;
+  line-height: 4.2;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.menu__link:hover {
+  color: #262424;
+}
+
+.menu__link::before {
+  content: "";
+  display: inline-flex;
+  margin-right: 19px;
+  background-image: url('../../img/icons/sprites.png');
+  position: absolute;
+  left: -36px;
+  top: -3px;
+}
+
+.menu__link--home::before {
+  width: 17px;
+  height: 18px;
+  background-position: -50px -100px;
+}
+
+.menu__link--rewiews::before {
+  width: 20px;
+  height: 18px;
+  background-position: -96px -62px;
+}
+
+.menu__link--crew::before {
+  width: 23px;
+  height: 18px;
+  background-position: -53px -62px;
+}
+
+.menu__link:hover.menu__link::after {
+  content: "";
+  display: inline-flex;
+  margin-right: 19px;
+  background-image: url('../../img/icons/sprites.png');
+  position: absolute;
+  left: -36px;
+  top: -3px;
+}
+
+.menu__link:hover.menu__link--home::after {
+  width: 17px;
+  height: 18px;
+  background-position: -87px -100px;
+}
+
+.menu__link:hover.menu__link--rewiews::after {
+  width: 20px;
+  height: 18px;
+  background-position: -10px -100px;
+}
+
+.menu__link:hover.menu__link--crew::after {
+  width: 23px;
+  height: 18px;
+  background-position: -10px -62px;
+}
